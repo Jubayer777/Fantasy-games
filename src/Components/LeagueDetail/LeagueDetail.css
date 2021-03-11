@@ -1,0 +1,62 @@
+#details-container{
+    background-color: #F2EDD7FF;
+}
+#details-card{
+    background-color:#755139FF;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 4px 3px cadetblue;
+    color: #F2EDD7FF;
+}
+#gender-img{
+    width: 98%;
+    height: 220px;
+    border-radius: 10px;
+    margin: 10px;
+}
+#details-text{
+    padding: 40px 24px;
+}
+#details-text h5{
+    margin-bottom: 20px;
+  }
+#details-text p{
+  margin-bottom: 3px;
+}
+#discription-area{
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    text-justify: inter-word;
+    color: #755139FF;
+}
+#facebook,#twitter{
+    margin-left:15px;
+    margin-right: 15px;
+    color:blue;
+    font-size: 50px;
+}
+
+#instagram{
+    margin-left:15px;
+    margin-right: 15px;
+    color:rgb(240, 70, 240);
+    font-size: 50px;
+}
+footer{
+    margin-top: 50px;
+    padding-bottom: 60px;
+}
+@media only screen and (max-width:600px){
+    #gender-img{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,23 @@
+.banner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+}
+ #home-banner{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../../Images/banner.jpg);
+}
+#detail-banner-optional{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.6),rgba(0, 0, 0, 0.5)), url(../../Images/banner.jpg);
+}
+#banner-logo{
+    width: 150px;
+    margin-top: 20px;
+}
+#banner-text{
+    font-weight: bold;
+    padding-top: 60px;
+    color: white;
+}
+
+

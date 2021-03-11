@@ -1,0 +1,21 @@
+#league-card{
+    width:21rem;
+    border-radius:5px;
+    background-color:#76528BFF;
+    margin:15px;
+    border:none;
+    box-shadow: 2px 5px 4px rgb(68, 63, 63);
+    color: #CBCE91FF;
+}
+#card-img{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#explore-btn{
+    background-color:#ADEFD1FF;
+    border: none;
+    color: #00203FFF;
+}
