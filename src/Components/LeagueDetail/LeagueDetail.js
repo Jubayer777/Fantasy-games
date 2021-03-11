@@ -7,7 +7,7 @@ import female from '../../Images/female.png';
 import Header from '../Header/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlag, faFutbol,faMars,faVenus,faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
-import { faFacebook,faTwitterSquare,faInstagram} from '@fortawesome/free-brands-svg-icons';
+import { faFacebook,faTwitterSquare,faYoutube} from '@fortawesome/free-brands-svg-icons';
 
 const LeagueDetail = () => {
     //getting individual league id for fatching data
@@ -21,7 +21,7 @@ const LeagueDetail = () => {
           .then(data=>setLeague(data.leagues[0]))
     }, [leagueId]);
     // Destructuring object league after fatching API data
-    const {strBanner,strBadge,strLeague,dateFirstEvent,strCountry,strSport,strGender,strDescriptionEN,strDescriptionFR}=league;
+    const {strBanner,strBadge,strLeague,dateFirstEvent,strCountry,strSport,strGender,strDescriptionEN,strDescriptionFR,strFacebook,strTwitter,strYoutube}=league;
     
     // conditional renedaring for checking male or female team
     let genderLogo=(strGender==='Male' ? male:female);
@@ -55,9 +55,9 @@ const LeagueDetail = () => {
             </div>
             {/* footer with social platform */}
             <footer>
-                  <a id="facebook" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/jubayer.allmhamud/"><FontAwesomeIcon icon={faFacebook}/></a>
-                  <a id="twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/jubayer_i"><FontAwesomeIcon icon={faTwitterSquare}/></a>
-                  <a id="instagram" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/jubayer.allmhamud/"><FontAwesomeIcon icon={faInstagram}/></a>
+            <a id="facebook" target="_blank" rel="noopener noreferrer" href={`https://${strFacebook}`}><FontAwesomeIcon icon={faFacebook}/></a>
+                  <a id="twitter" target="_blank" rel="noopener noreferrer" href={`https://${strTwitter}`}><FontAwesomeIcon icon={faTwitterSquare}/></a>
+                  <a id="youtube" target="_blank" rel="noopener noreferrer" href={`https://${strYoutube}`}><FontAwesomeIcon icon={faYoutube}/></a>
             </footer>
         </div>
     );
