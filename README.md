@@ -12,4 +12,4 @@ Functionality:
 7.	At last there is a footer that contain Facebook, Twitter and Instagram icons with link that open the link in new tab if clicked.
 8.	And finally, this site is mainly focused react routing, that dynamically changed according to users operate.
 
-Live Site Link: [Fantasy Games](https://angry-keller-23c24d.netlify.app/)
+Live Site Link: [Fantasy Games](https://fantasy-games.netlify.app/)
